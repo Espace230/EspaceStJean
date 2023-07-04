@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1600 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g id="Whitespace" transform="matrix(1,0,0,1,0.699817,0)">
-        <rect x="0" y="0" width="1600" height="640" style="fill:white;"/>
-    </g>
-    <g id="Logotype">
+<svg width="100%" height="100%" viewBox="0 0 1234 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Logotype" transform="matrix(1,0,0,1,-183,-180)">
         <g id="ART-CONTEMPORAIN---CONTEMPORARY-ART" serif:id="ART CONTEMPORAIN / CONTEMPORARY ART" transform="matrix(0.675197,0,0,0.026806,88.899,417.382)">
             <g>
                 <path d="M169.52,1423.35L178.647,1423.35L163.64,410.67L154.345,410.67L139.227,1423.35L147.794,1423.35L150.874,1206.15L166.496,1206.15L169.52,1423.35ZM158.769,644.801L164.144,1035.49L153.281,1035.49L158.769,644.801Z" style="fill:rgb(35,31,32);fill-rule:nonzero;"/>
