@@ -72,6 +72,7 @@
 			"telephone": "+1 (514) 965-1579"
 		}
 	</script>
+
 	<style>
 		/* Font Inter Variable */
 		@font-face {
@@ -92,32 +93,55 @@
 			src: url("./fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
 		}
 
+		@font-face {
+			font-family: 'Inter Tight';
+			font-weight: 100 900;
+			font-display: swap;
+			font-style: normal;
+			font-named-instance: 'Regular';
+			src: url("./fonts/InterTight-VariableFont_wght.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: 'Inter Tight';
+			font-weight: 100 900;
+			font-display: swap;
+			font-style: italic;
+			font-named-instance: 'Italic';
+			src: url("./fonts/InterTight-Italic-VariableFont_wght.woff2") format("woff2");
+		}
+
 	</style>
+
 	<style>
 		html {
 			/* avoid background bounce */
 			height: 100%;
 			overflow: hidden;
+			/* Prevent font scaling in Landscape mode */
+			-webkit-text-size-adjust: 100%;
 		}
 
 		body {
-			/* reset */
 			padding: 0;
+			margin: 0;
 			/* margin: 5vw 5vw 0 5vw; */
-			margin: 0 5vw;
+			/* margin: 0 5vw; */
 			/* avoid background bounce */
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			left: 0;
 			right: 0;
+			height: 100%;
 			overflow: auto;
-			color: #141516;
-			font-family: 'Inter', 'Helvetica', 'Arial', 'Open Sans', sans-serif;
-			font-size: 0.875em;
+			color: #121314;
+			/* background: #fff; */
+			background: #fafafa;
+			font-family: 'Inter Tight', 'Inter', 'Helvetica', 'Arial', 'Open Sans', sans-serif;
+			font-size: 0.875rem;
 			line-height: 1.2rem;
 			/* letter-spacing: 0.0625rem; */
-			background: #fff;
 			background-size: cover;
 			-webkit-font-smoothing: subpixel-antialiased;
 			-moz-font-smoothing: antialiased;
@@ -127,6 +151,12 @@
 			-ms-overflow-style: none;
 			scrollbar-width: none;
 			text-align: center;
+			/* Center everything */
+			display: flex;
+			-webkit-align-items: center;
+			align-items: center;
+			-webkit-justify-content: center;
+			justify-content: center;
 		}
 
 		body::-webkit-scrollbar {
@@ -140,13 +170,13 @@
 			margin-top: 1.6111111rem;
 			margin-bottom: 0;
 			font-weight: 600;
-			letter-spacing: -0.03rem;
+			/* letter-spacing: -0.03rem; */
 		}
 
 		h2,
 		.h2 {
 			font-weight: 700;
-			letter-spacing: 0.025rem;
+			/* letter-spacing: 0.025rem; */
 			font-size: 1rem;
 			line-height: 1.6111111em;
 			margin-top: 1.6111111em;
@@ -230,19 +260,29 @@
 		hr,
 		.hr {
 			border: 1px solid;
-			margin: -2px 0;
+			margin: -2px auto;
+			/* max-width: 960px; */
 		}
 
-		/* STRUCTURE */
+
+		/* ////////// MAIN STRUCTURE \\\\\\\\\ */
+
+
+
+		.main {
+			margin: 0;
+			padding: 0;
+		}
+
 		.logotype {
 			display: block;
 			height: auto;
-			max-width: 100%;
+
+			padding: 20% 0;
 		}
 
 		.intro {
 			text-align: center;
-			padding: 0 1.25em 1.25em 1.25em;
 			font-weight: 500;
 		}
 
@@ -256,7 +296,7 @@
 			border: none;
 			display: inline-block;
 			padding: 0.5rem;
-			color: #141516;
+			color: #121314;
 		}
 
 		.icons-sml {
@@ -279,7 +319,7 @@
 			color: #fff;
 			font-weight: 700;
 			text-transform: uppercase;
-			letter-spacing: 0.01rem;
+			letter-spacing: 0.02rem;
 			font-size: 0.7777777778rem;
 			line-height: 1;
 			white-space: nowrap;
@@ -291,14 +331,14 @@
 		}
 
 		.button-white {
-			border: 2.5px solid #141516;
+			border: 2.5px solid #121314;
 			background: #fff;
-			color: #141516;
+			color: #121314;
 		}
 
 		.button-white:hover {
-			border: 2.5px solid #141516;
-			background: #141516;
+			border: 2.5px solid #121314;
+			background: #121314;
 			color: #fff;
 			transition: 0.3s;
 		}
@@ -339,70 +379,43 @@
 			grid-area: rdv;
 		}
 
+		@media screen and (max-width: 768px) {
+
+			/* html, .root { font-size: 13px; } */
+
+			html,
+			.root {
+				font-size: 0.72222222em;
+			}
+		}
+
 	</style>
 </head>
 
 <body>
-	<img src="./svg/ESPACE-ST-JEAN-Website-Logo.svg" alt="Espace St-Jean" class="logotype">
 
-	<!-- <h1>Galerie d'art contemporain et atelier de l'artiste peintre <span style="white-space: nowrap;">Louis-Bernard St-Jean</span> </h1> -->
-	<!-- <h1>Galerie d'art contemporain et atelier de <span style="white-space: nowrap;">Louis-Bernard St-Jean</span> </h1> -->
-	<h1 class="no-top-margin">Inauguration : août 2023</h1>
-	<br />
-	<br />
-	<!-- <div class="icons-row">
-		<a class="icons" href="https://espacestjean.com"><i class="icon-desktop"></i></a><a class="icons" target="_blank" href="https://www.facebook.com/espacestjean"><i class="icon-facebook"></i></a><a class="icons" target="_blank" href="https://www.instagram.com/espacestjean"><i class="icon-instagram"></i></a> <a class="icons" target="_blank" href="mailto:info@espacestjean.com"><i class="icon-mail"></i></a><a class="icons" target="_blank" href="https://g.page/espacestjean"><i class="icon-location"></i></a>
-	</div> -->
-	<!-- <div class="intro">
-		<p>La galerie ouvrira ses portes début d'août 2023; elle&nbsp;sera située au 5e étage de l'édifice Belgo, au cœur du Quartier des spectacles à&nbsp;Montréal.</p>
-	</div> -->
-	<br />
+	<div class="main">
+		<div class="intro">
 
-	<p>
-		<a class="button button-white" href="https://belgo.art/?&utm_source=espacestjean.com" target="_blank">Expositions en cours au Belgo</a>
-	</p>
-	<br />
-	<br />
-	<hr>
-	<h2 class="no-bottom-margin">Espace St-Jean / Art contemporain</h2>
-	<p>372, rue Sainte-Catherine Ouest, suite 521<br />Montréal (Québec)&ensp;H3B&nbsp;1A2</p>
-	<div class="half-bottom-margin">
-		<!-- <p><a style="color:inherit" href="https://g.page/espacestjean" target="_blank">372, rue Sainte-Catherine Ouest, suite 521<br />Montréal (Québec)&ensp;H3B&nbsp;1A2</a></p> -->
+			<img src="./svg/ESPACE-ST-JEAN-Website-Logo-no_margin.svg" alt="Espace St-Jean" class="logotype">
 
-		<!-- <a href="https://g.page/espacestjean" target="_blank"><i class="icon icons-sml icon-location hx-inline"></i></a><a href="https://facebook.com/espacestjean" target="_blank"><i class="icon icons-sml icon-facebook hx-inline"></i></a>
-		<a href="https://instagram.com/espacestjean" target="_blank"><i class="icon icons-sml icon-instagram hx-inline"></i></a><span>&ensp;|&ensp;</span> -->
-		<!-- <a class="nodeco semi-bold link" target="_blank" href="https://espacestjean.com">espacestjean.com</a><span>&ensp;·&ensp;</span><a class="nodeco semi-bold link" target="_blank" href="mailto:info@espacestjean.com">info@espacestjean.com</a> -->
-		<!-- <a class="nodeco semi-bold link" href="tel:+1-514-965-1579">514 965-1579</a><span>&ensp;·&ensp;</span><a class="nodeco semi-bold link" href="mailto:info@espacestjean.com">info@espacestjean.com</a> -->
-		<a class="nodeco semi-bold link" href="mailto:info@espacestjean.com">info@espacestjean.com</a>
+			<h1 class="no-top-margin">Ouverture : août 2023</h1>
+			<!-- <p>
+			<br />
+			<br />
+			<a class="button button-white" href="https://belgo.art/?&utm_source=espacestjean.com" target="_blank">Expositions en cours au Belgo</a>
+		</p> -->
+			<hr style="margin-top:2em;">
+			<h2 class="no-bottom-margin">Espace St-Jean / Art contemporain</h2>
+			<p>372, rue Sainte-Catherine Ouest, suite 521<br />Montréal (Québec)&ensp;H3B&nbsp;1A2</p>
+			<div class="half-bottom-margin">
+				<a class="nodeco semi-bold link" href="mailto:info@espacestjean.com">info@espacestjean.com</a>
+			</div>
+
+		</div>
 	</div>
 
 
-	<!-- <h3 class="no-bottom-margin">Heures d'ouverture</h3>
-	<div class="no-top-margin">Mercredi au samedi&nbsp;: 12&thinsp;h à 17&thinsp;h</div> -->
-
-
-
-	<!-- <h2 class="half-top-margin">Heures d'ouverture</h2> -->
-	<!-- <div class="grid-opening-hours-simplified no-bottom-margin">
-		<div class="grid-open semi-bold">Mercredi à samedi</div>
-		<div class="hours">12h à 18h</div> -->
-	<!-- <div class="grid-open-wknd semi-bold">Samedi</div>
-		<div class="hours-wknd">12h à 17h</div> -->
-	<!-- <div class="grid-rdv semi-bold">Mardi</div>
-				<div class="rdv">
-					<em><a class="link" style="font-weight:inherit" href="mailto:info@espacestjean.com">ouvert sur demande</a></em>
-				</div> -->
-	<!-- </div> -->
-
-
-	<!-- Footer -->
-	<!-- <div class="footer">
-		<br />
-		<hr />
-		<p style="margin-top:0.25em">Copyright &copy; 2023<span style="float: right;">Espace St-Jean</span>
-	</div> -->
-	<br />
-	<br />
 
 </body>
 
