@@ -178,6 +178,13 @@
 	<link rel="stylesheet" href="./css/layout.css">
 	<!-- <link rel="stylesheet" href="./css/art-gallery-icons.css"> -->
 
+	<script type="text/javascript">
+		$(document).on('click', 'a', function (e) {
+			e.preventDefault();
+			document.location.href = $(this).attr('href');
+		});
+	</script>
+	
 </head>
 
 
@@ -877,12 +884,5 @@
 
 
 </body>
-
-<script type="text/javascript">
-	$(document).on('click', 'a', function (e) {
-		e.preventDefault();
-		document.location.href = $(this).attr('href');
-	});
-</script>
 
 </html>
