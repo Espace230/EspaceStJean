@@ -1,0 +1,813 @@
+@charset "UTF-8";
+/* NOTES *********************************************** */
+/* Font Inter ; Size 18px ; line-Height 1.6 ; Scale Factor 1.414 */
+
+/* NB !-- Add a reset... */
+
+body {
+	-webkit-font-smoothing: subpixel-antialiased;
+	/* -webkit-font-smoothing: antialiased; */
+	-moz-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizelegibility;
+	font-kerning: normal;
+	overscroll-behavior: none;
+	overflow: hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+html,
+.root {
+	font-size: 18px;
+	line-height: 29px;
+	/* font-size: 1.6111111vh;
+line-height: 3.2222222vh; */
+}
+
+body,
+.article {
+	font-size: 1em;
+	line-height: 1.6111111em;
+	margin: auto;
+}
+
+h1,
+.h1 {
+	font-size: 4.8333333rem;
+	/* font-size: 4.2222222rem; */
+	line-height: 4.8333333rem;
+	/* margin-top: 1.6111111rem; */
+	/* margin-bottom: 3.2222222rem; */
+	margin-top: 3.2222222rem;
+	margin-bottom: 1.6111111rem;
+	letter-spacing: -0.06rem;
+
+}
+
+h2,
+.h2 {
+	font-size: 2.6111111rem;
+	line-height: 3.2222222rem;
+	margin-top: 1.6111111rem;
+	margin-bottom: 1.6111111rem;
+	letter-spacing: -0.05rem;
+}
+
+h3,
+.h3 {
+	font-size: 1.6111111rem;
+	line-height: 1.6111111rem;
+	margin-top: 1.6111111rem;
+	margin-bottom: 1.6111111rem;
+	letter-spacing: -0.05rem;
+}
+
+.icon {
+	color: #444;
+	/* font-size: 1.6111111rem; */
+	font-size: 1.3555555rem;
+}
+
+.hx-inline {
+	vertical-align: sub;
+}
+
+h4,
+.h4 {
+	font-size: 1rem;
+	line-height: 1.6111111rem;
+	margin-top: 1.6111111rem;
+	margin-bottom: 0;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+h5,
+.h5 {
+	color: #771111;
+	/* #0F1E4E; */
+	/* color: #484848; */
+	text-transform: uppercase;
+	font-weight: 800;
+	/* 700 */
+	letter-spacing: 0.025rem;
+	font-size: 0.722rem;
+	line-height: 1.6111111em;
+	margin-top: 1.6111111em;
+	margin-bottom: 0;
+}
+
+/* ol reset */
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+p,
+ul,
+/* ol, */
+pre,
+table,
+blockquote {
+	margin-top: 0;
+	/* margin-bottom: 1.6111111em; <-- Modified March 26, 2022 */
+	/* margin-bottom: 0.6111111em; */
+	margin-bottom: 1.3555555rem;
+	;
+}
+
+summary :not(.gallery-summary) {
+	padding-bottom: 0.6111111em;
+	margin-left: -1em !important;
+}
+
+details {
+	padding-bottom: 0.6111111em;
+}
+
+details p:last-of-type {
+	margin-bottom: 0
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+/* GENERAL COSMETICS *********************************** */
+
+/* h1 {font-family: 'Anton', sans-serif; color: #121212; font-weight: 700; text-transform:uppercase;}  */
+body,
+h1,
+h2,
+h3,
+h4,
+article,
+p,
+ul,
+ol {
+	font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+	/* font-family: 'Inter Tight', 'Helvetica', 'Arial', sans-serif; */
+	color: #242424;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: #141516;
+}
+
+/* color: #242424; */
+
+a {
+	font-weight: 600;
+	color: #092c79;
+	text-decoration: none;
+}
+
+.link {
+	font-weight: 600;
+	color: #141516;
+	text-decoration: underline;
+}
+
+.nodeco {
+	color: #141516;
+	text-decoration: none;
+}
+
+.icon,
+.fa,
+.sa,
+.vendu,
+.grid-opening-hours {
+	color: #333;
+}
+
+/* #444 */
+
+a:hover {
+	color: #0047ab;
+	transition: 0.3s;
+}
+
+.link:hover {
+	color: #092c79;
+	transition: 0.3s;
+}
+
+.icon:hover,
+.sa:hover {
+	color: #848484;
+	transition: 0.3s;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+strong {
+	font-weight: 800;
+}
+
+
+
+/* BRANDING TWEAKS ************************************* */
+
+hr,
+.hr {
+	border: 1px solid;
+	margin: -2px 0;
+}
+
+hr.thick {
+	border: 2px solid;
+	margin: -2px 0;
+}
+
+hr.shorted {
+	border: 1px solid;
+	margin: -2px 0;
+	width: 20%;
+	color: #AAA;
+}
+
+/* WHY WAS THIS BELOW ACTIVATED? */
+/* a, */
+b,
+i,
+strong,
+em,
+small,
+code {
+	line-height: 1rem;
+}
+
+/* Tweaks */
+.highlight {
+	font-weight: 600;
+}
+
+.nowrap,
+.nobr {
+	white-space: nowrap;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+
+.no-top-margin {
+	margin-top: 0;
+}
+
+.half-bottom-margin {
+	margin-bottom: 0.722rem;
+}
+
+.half-top-margin {
+	margin-top: 0.722rem;
+}
+
+.quart-top-margin {
+	margin-top: 0.361rem;
+}
+
+.no-margins {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.no-bottom-padding {
+	padding-bottom: 0;
+}
+
+.medium {
+	font-weight: 500;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+.emphasis {
+	font-weight: 500;
+	font-style: italic;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.extra-bold {
+	font-weight: 800;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.underscore {
+	text-decoration: underline;
+}
+
+sub,
+sup {
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+.copy {
+	font-size: 0.722rem;
+	font-weight: 600;
+}
+
+.text-partners {
+	font-size: 0.722rem;
+	font-weight: 500;
+	line-height: 1rem;
+}
+
+.img-frame {
+	border: 1px solid #a8a8a8;
+	/* #a4a4a4 */
+}
+
+.social-row {
+	line-height: 2.416666rem;
+}
+
+.newsflash {
+	border-left: 2px solid black;
+	padding: 0.5rem 1rem;
+	margin-left: 0.75rem;
+	/* border-top: 1px solid black; 
+	border-bottom: 1px solid black; 
+	padding: 0.4em 0;
+	margin-left: 0.625em;
+	margin-right: 0.625em; */
+	/* padding-left:0.5em; 
+	padding-right:0.5em; */
+}
+
+
+/* ARTWORK DESCRIPTIONS AND LAYOUT ********************* */
+
+.modal-text {
+	padding-left: 1vw;
+	/* 0.5vw */
+	bottom: 1.6111111em;
+	position: fixed;
+}
+
+.modal-price {
+	padding-right: 1vw;
+	/* 0.5vw */
+	bottom: 1.6111111em;
+	right: 1vw;
+	position: fixed;
+}
+
+.author {
+	font-weight: 700;
+}
+
+.title {
+	font-weight: 800;
+}
+
+.artist,
+.description {
+	font-weight: 500;
+}
+
+.artwork {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.vendu {
+	font-weight: 800;
+	color: #771111;
+}
+
+.acquire {
+	font-weight: 700;
+	/* text-decoration: underline; */
+}
+
+.por {
+	font-style: italic;
+}
+
+
+
+
+
+/* BUTTONS ********************************************* */
+
+.button {
+	border: 2.5px solid #121212;
+	/*  #626262 #0047ab; #092729 */
+	background: #121212;
+	/* #626262  #0F1E4E */
+	color: #fff;
+	/* background: #fff; 
+	color: #121212; */
+	/* border-radius: 4px; */
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.01rem;
+	font-size: 0.7777777778rem;
+	line-height: 1;
+	white-space: nowrap;
+	text-decoration: none;
+	/* padding: 15px 30px; */
+	/* padding: 1rem 2rem; */
+	padding: 0.85rem 1.75rem;
+	margin: 0;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.artworks {
+	margin-bottom: 4em;
+}
+
+.artist-artwork {
+	margin-bottom: 1em;
+}
+
+.button:hover {
+	border: 2.5px solid #848484;
+	background: #848484;
+	color: #fdfdff;
+	transition: 0.3s;
+}
+
+.button-white {
+	border: 2.5px solid #141516;
+
+	/*  #626262 #0047ab; #092729 */
+	background: #fff;
+	/* #626262  #0F1E4E */
+	color: #141516;
+}
+
+.button-white:hover {
+	border: 2.5px solid #141516;
+	background: #141516;
+	color: #fff;
+	transition: 0.3s;
+}
+
+/* .modal-text>button, article>button {
+	float: right;
+} */
+
+.button-buy {
+	/* margin-top: 1.6111111rem; */
+	/* margin-bottom: 1.6111111rem; */
+	/* display: inline-block; */
+	float: right;
+	max-width: 132px;
+}
+
+.LogoNB {
+	max-width: 150px !important;
+	padding: 0 30px;
+}
+
+/* .btn-hover-buy {
+	max-width: 132px;
+} */
+
+/* border: 2.5px solid #eee; */
+
+/* TO DISPLAY 'ACHETER' ON HOVER: */
+/* button.btn-hover-buy:hover > span {
+	display: none;
+}
+button.btn-hover-buy:hover:before {
+	content: "ACHETER";
+} */
+
+/* TO DISPLAY PRICE ON HOVER: */
+/* ***DEPRECATED*** */
+/* button.btn-hover-buy > span {
+	display: none;
+}
+
+button.btn-hover-buy:before {
+	content: "ACHETER";
+}
+
+button.btn-hover-buy:hover:before {
+	content: "";
+}
+
+button.btn-hover-buy:hover > span {
+	display: block;
+} */
+
+.drop-shadow {
+	/* max-width: 80%;
+	padding: 10%; */
+	-webkit-filter: drop-shadow(10px 10px 10px #aaa);
+	filter: drop-shadow(10px 10px 10px #aaa);
+}
+
+.float-right {
+	align-self: flex-end;
+}
+
+/* button.ext-link > span:after {
+	content: ' ⌝';
+	position: relative;
+	top: -5px;
+	right: -5px;
+} */
+
+/* .icon-square:after {
+	content: url(./svg/square_44px_icon.svg);
+} */
+
+.button-icon svg {
+	width: 21px;
+	height: 21px;
+	padding-left: 8px !important;
+	margin-bottom: -5px !important;
+	margin-right: -16px !important;
+	margin-top: -3px !important;
+}
+
+/* Old Values */
+/* padding-left: 10px;
+	margin-bottom: -6px;
+	margin-right: -16px; */
+
+/* Left-Side Icon */
+/* padding-right: 10px;
+	padding-bottom: 1px;
+	margin-bottom: -6px;
+	margin-left: -16px; */
+
+
+.button-icon:hover svg {
+	filter: invert(100%);
+}
+
+
+
+/* OPENING HOURS *************************************** */
+
+.grid-opening-hours {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: repeat(7, 1fr);
+	grid-column-gap: 0.75rem;
+	grid-row-gap: 0;
+	justify-content: flex-start;
+	grid-template-areas:
+		"Monday Monday-Hours"
+		"Tuesday Tuesday-Hours"
+		"Wednesday Wednesday-Hours"
+		"Thursday Thursday-Hours"
+		"Friday Friday-Hours"
+		"Saturday Saturday-Hours"
+		"Sunday Sunday-Hours";
+}
+
+.Monday {
+	grid-area: Monday;
+}
+
+.Monday-Hours {
+	grid-area: Monday-Hours;
+}
+
+.Tuesday {
+	grid-area: Tuesday;
+}
+
+.Tuesday-Hours {
+	grid-area: Tuesday-Hours;
+}
+
+.Wednesday {
+	grid-area: Wednesday;
+}
+
+.Wednesday-Hours {
+	grid-area: Wednesday-Hours;
+}
+
+.Thursday {
+	grid-area: Thursday;
+}
+
+.Thursday-Hours {
+	grid-area: Thursday-Hours;
+}
+
+.Friday {
+	grid-area: Friday;
+}
+
+.Friday-Hours {
+	grid-area: Friday-Hours;
+}
+
+.Saturday {
+	grid-area: Saturday;
+}
+
+.Saturday-Hours {
+	grid-area: Saturday-Hours;
+}
+
+.Sunday {
+	grid-area: Sunday;
+}
+
+.Sunday-Hours {
+	grid-area: Sunday-Hours;
+}
+
+.grid-opening-hours-simplified {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0.75rem;
+	grid-row-gap: 0;
+	/* grid-template-areas: "grid-open hours" "grid-rdv rdv"; */
+	grid-template-areas:
+		"grid-open hours"
+		"grid-open-wknd hours-wknd"
+		"grid-rdv rdv";
+	justify-content: flex-start;
+}
+
+.grid-open {
+	grid-area: grid-open;
+}
+
+.hours {
+	grid-area: hours;
+}
+
+.grid-open-wknd {
+	grid-area: grid-open-wknd;
+}
+
+.hours-wknd {
+	grid-area: hours-wknd;
+}
+
+.grid-rdv {
+	grid-area: grid-rdv;
+}
+
+.rdv {
+	grid-area: rdv;
+}
+
+
+/* CAROUSEL ******************************************** */
+
+
+.carousel {
+	/* margin: 0 auto; */
+	overflow: hidden;
+	text-align: center;
+	/* width: 100%; */
+	padding: 1em 0;
+}
+
+.slides {
+	display: flex;
+	overflow-x: scroll;
+	scrollbar-width: none;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
+.slides::-webkit-scrollbar {
+	display: none;
+}
+
+.slides-item {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	margin: 0 0.5rem;
+	position: relative;
+	scroll-snap-align: start;
+	transform: scale(1);
+	transform-origin: center center;
+	transition: transform .5s;
+	width: 100%;
+}
+
+.carousel_nav {
+	padding: 0;
+}
+
+.slider-nav {
+	align-items: center;
+	background-color: #ddd;
+	border-radius: 0;
+	color: #000;
+	display: inline-flex;
+	height: 2px;
+	justify-content: center;
+	position: relative;
+	text-decoration: none;
+	width: 2rem;
+}
+
+
+/* CUSTOM ICONS FONT *********************************** */
+
+@font-face {
+	font-family: 'icons';
+	src:
+
+		url('../fonts/icons.ttf?zaxchk') format('truetype'),
+		url('../fonts/icons.woff?zaxchk') format('woff'),
+		url('../fonts/icons.svg?zaxchk#icons') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+i.icon {
+	font-family: 'icons' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: inherit;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+	content: "\e900";
+}
+
+.icon-map-marker:before {
+	content: "\e901";
+}
+
+.icon-map:before {
+	content: "\e902";
+}
+
+.icon-spotify:before {
+	content: "\e903";
+}
+
+.icon-pinterest:before {
+	content: "\e904";
+}
+
+.icon-instagram:before {
+	content: "\e905";
+}
+
+.icon-facebook:before {
+	content: "\e906";
+}
+
+.icon-facebook-f:before {
+	content: "\e906";
+}
+
+/* EOF */
