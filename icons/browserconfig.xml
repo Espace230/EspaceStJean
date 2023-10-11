@@ -1,1 +1,11 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="https://espacestjean.com/icons/mstile-150x150.png?v=2023.10"/>
+            <square310x310logo src="https://espacestjean.com/icons/mstile-310x310.png?v=2023.10"/>
+            <wide310x150logo src="https://espacestjean.com/icons/mstile-310x150.png?v=2023.10"/>
+            <TileColor>#ffffff</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
