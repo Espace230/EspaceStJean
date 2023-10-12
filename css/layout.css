@@ -371,6 +371,20 @@ li.active #gallery-button-show {
 	.mobile-hidden {
 		visibility: hidden;
 	}
+
+
+	.belgo_art_iframe {
+		-ms-zoom: 0.9;
+		-moz-transform: scale(0.9);
+		-moz-transform-origin: 0 0;
+		-o-transform: scale(0.9);
+		-o-transform-origin: 0 0;
+		-webkit-transform: scale(0.9);
+		-webkit-transform-origin: 0 0;
+		overflow: hidden;
+		width: 107% !important;
+	}
+
 }
 
 @media screen and (orientation: landscape) and (max-width: 896px) {
@@ -422,6 +436,16 @@ li.active #gallery-button-show {
 	.gallery-section {
 		padding-left: 7vw;
 	}
+
+	/* #belgo-gallery-embed {
+		width: 89%;
+		padding-top: 138%;
+	}
+
+	#belgo-gallery-embed > iframe {
+		width: 89%;
+		height: 89%;
+	} */
 }
 
 /* @media screen and (orientation: landscape) and (max-width: 667px) { */
