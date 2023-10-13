@@ -38,14 +38,15 @@ body,
 
 h1,
 .h1 {
-	font-size: 4.8333333rem;
-	/* font-size: 4.2222222rem; */
+	/* font-size: 4.8333333rem; */
+	font-size: 4.2222222rem;
 	line-height: 4.8333333rem;
 	/* margin-top: 1.6111111rem; */
 	/* margin-bottom: 3.2222222rem; */
 	margin-top: 3.2222222rem;
 	margin-bottom: 1.6111111rem;
-	letter-spacing: -0.06rem;
+	/* letter-spacing: -0.06rem; */
+	letter-spacing: -0.18rem;
 
 }
 
