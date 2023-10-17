@@ -290,6 +290,10 @@ code {
 	margin-top: 0.361rem;
 }
 
+.quart-bottom-margin {
+	margin-bottom: 0.361rem;
+}
+
 .no-margins {
 	margin-top: 0;
 	margin-bottom: 0;
