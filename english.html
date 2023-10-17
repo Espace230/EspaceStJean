@@ -8,22 +8,22 @@
 	<link rel="alternate" hreflang="x-default" href="https://espacestjean.com/" />
 	<title>Home | Espace St-Jean / Art contemporain</title>
 	<meta name="author" content="Louis-Bernard St-Jean">
-	<meta name="description" content="Galerie d'art contemporain et atelier de l'artiste peintre contemporain Louis-Bernard St-Jean, situé dans l'édifice Belgo, au cœur du Quartier des spectacles à Montréal.">
+	<meta name="description" content="Contemporary art gallery and artist studio located on the 5th floor of the Belgo building, in the heart of the Quartier des spectacles in Montreal, Quebec.">
 	<meta name="keywords" content="Espace St-Jean, Espace 230, galerie d'art, artist studio, art gallery, Montreal, artist, artwork, art for sale, artiste, painting, Louis-Bernard St-Jean, édifice Belgo, Belgo building, quartier des spectacles, Montreal, Montréal">
 	<meta property="og:url" content="https://espacestjean.com/">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Espace St-Jean / Art contemporain">
 	<meta property="og:image" content="https://espacestjean.com/images/thumbnail.jpg">
 	<meta property="og:locale" content="fr_CA">
-	<meta property="og:description" content="Galerie d'art contemporain et atelier de l'artiste peintre contemporain Louis-Bernard St-Jean">
+	<meta property="og:description" content="Contemporary art gallery and artist studio located on the 5th floor of the Belgo building, in the heart of the Quartier des spectacles in Montreal, Quebec.">
 	<meta property="og:secure_url" content="https://espacestjean.com/images/thumbnail.jpg">
 	<meta property="og:image:type" content="image/jpeg">
 	<meta property="og:image:width" content="1280">
 	<meta property="og:image:height" content="720">
 	<meta property="og:site_name" content="Espace St-Jean / Art contemporain">
-	<meta name="og:image:alt" content="Galerie d'art contemporain et atelier de l'artiste peintre contemporain Louis-Bernard St-Jean">
+	<meta name="og:image:alt" content="Contemporary art gallery and artist studio located on the 5th floor of the Belgo building, in the heart of the Quartier des spectacles in Montreal, Quebec.">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image:alt" content="Galerie d'art contemporain et atelier de l'artiste peintre contemporain Louis-Bernard St-Jean">
+	<meta name="twitter:image:alt" content="Contemporary art gallery and artist studio located on the 5th floor of the Belgo building, in the heart of the Quartier des spectacles in Montreal, Quebec.">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 	<meta name="apple-mobile-web-app-status-bar-style" content="hidden">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -178,15 +178,15 @@
 	<link rel="stylesheet" href="./css/layout.css">
 	<!-- <link rel="stylesheet" href="./css/art-gallery-icons.css"> -->
 
-<script type="text/javascript">
+	<!-- Keep internal links within WebApp  -->
+	<script type="text/javascript">
 		$(document).on('click', 'a', function (e) {
 			e.preventDefault();
 			document.location.href = $(this).attr('href');
 		});
 	</script>
-	
-</head>
 
+</head>
 
 <body>
 
@@ -210,13 +210,11 @@
 
 
 		<li class="main-nav" id="about">
-
 			<div class="section-title">
 				<a class="nav-link" href="./en/about.html">
 					<img src="./svg/ABOUT.svg" alt="About">
 				</a>
 			</div>
-
 			<div class="section-content">
 				<section class="main-content">
 				</section>
@@ -228,13 +226,11 @@
 
 
 		<li class="main-nav" id="artists">
-
 			<div class="section-title">
 				<a class="nav-link" href="./en/artists.html">
 					<img src="./svg/ARTISTS.svg" alt="Artists">
 				</a>
 			</div>
-
 			<div class="section-content">
 				<section class="main-content">
 				</section>
@@ -245,19 +241,31 @@
 		<!-- /////////////////////////////////////////////////////////////////////////////////// -->
 
 
-		<li class="main-nav" id="expositions">
-
-			<!-- <div class="section-title offset"> -->
+		<li class="main-nav" id="exhibitions">
 			<div class="section-title">
 				<a class="nav-link" href="./en/exhibitions.html">
 					<img src="./svg/EXHIBITIONS.svg" alt="Expositions">
 				</a>
 			</div>
-
 			<div class="section-content">
 				<section class="main-content">
 				</section>
+			</div>
+		</li>
 
+
+		<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+
+		<li class="main-nav" style="display:none; visibility:hidden;" id="artworks">
+			<div class="section-title">
+				<a class="nav-link" href="./en/artworks.html">
+					<img src="./svg/ARTWORKS.svg" alt="Artworks">
+				</a>
+			</div>
+			<div class="section-content artwork-list">
+				<section class="main-content">
+				</section>
 			</div>
 		</li>
 
@@ -266,34 +274,34 @@
 
 
 		<li class="main-nav" id="contact">
-
 			<div class="section-title">
 				<a class="nav-link" href="./en/contact.html">
 					<img src="./svg/CONTACT.svg" alt="Contact">
 				</a>
 			</div>
-
 			<div class="section-content">
 				<section class="main-content">
 				</section>
 			</div>
-
-
 		</li>
 
-		<li class="main-nav" id="french">
 
+		<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+
+		<li class="main-nav" id="french">
 			<div class="section-title">
 				<a class="nav-link" href="./index.html">
 					<img src="./svg/FRANCAIS.svg" alt="French">
 				</a>
 			</div>
 		</li>
+
+
+		<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+
 	</ul>
-
-
-	<!-- /////////////////////////////////////////////////////////////////////////////////// -->
-
 
 </body>
 
