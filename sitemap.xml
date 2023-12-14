@@ -3,56 +3,66 @@
 	<url>
 		<loc>https://www.espacestjean.com</loc>
 		<priority>1.00</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-11-16</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/english.html</loc>
 		<priority>0.75</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/fr/expositions.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-11-13</lastmod>
+	</url>
+	<url>
+		<loc>https://www.espacestjean.com/fr/oeuvres.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-12-09</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/fr/coordonnees.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-11-12</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/fr/artistes.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-11-14</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/fr/a-propos.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-11-15</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/en/exhibitions.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-12-13</lastmod>
+	</url>
+	<url>
+		<loc>https://www.espacestjean.com/en/artworks.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/en/contact.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-12-14</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/en/artists.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-12-12</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/en/about.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-10-11</lastmod>
+		<lastmod>2023-12-11</lastmod>
 	</url>
 	<url>
 		<loc>https://www.espacestjean.com/comm-presse/2023/Exposition-Jean-Leduc-Ne-me-renie-jamais-plus.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2023-09-06</lastmod>
+		<lastmod>2022-10-31</lastmod>
 	</url>
 </urlset>
