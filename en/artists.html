@@ -135,43 +135,33 @@
 		</script> -->
 
 	<style>
-		/* Font Inter Variable */
+		/* Variable fonts usage: */
+		:root {
+			font-family: "InterVariable", "Inter", sans-serif;
+		}
+
+		@supports (font-variation-settings: normal) {
+			:root {
+				font-family: "InterVariable", sans-serif;
+				font-optical-sizing: auto;
+			}
+		}
+
 		@font-face {
-			font-family: 'Inter';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: InterVariable;
 			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
+			font-weight: 100 900;
+			font-display: swap;
+			src: url("../fonts/InterVariable.woff2") format("woff2");
 		}
 
 		@font-face {
-			font-family: 'Inter';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: InterVariable;
 			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
-		}
-
-		/* Font Inter Tight Variable */
-		/* @font-face {
-			font-family: 'Inter Tight';
 			font-weight: 100 900;
 			font-display: swap;
-			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/InterTight-VariableFont_wght.woff2") format("woff2");
+			src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
 		}
-
-		@font-face {
-			font-family: 'Inter Tight';
-			font-weight: 100 900;
-			font-display: swap;
-			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/InterTight-Italic-VariableFont_wght.woff2") format("woff2");
-		} */
 
 	</style>
 	<link rel="stylesheet" href="../css/style.css">
@@ -266,6 +256,53 @@
 					&nbsp;
 					<h2 class="quart-bottom-margin">Collaborations</h2>
 					<hr>
+					&nbsp;
+
+					<article id="Annie-Lapointe">
+						<br>
+						<!-- &nbsp; -->
+						<p>
+							<img class="img-frame" src="../images/Annie-Lapointe-Photo-profil.jpg" alt="Portrait de la photographe Annie Lapointe">
+						</p>
+						<h3 class="half-bottom-margin">Annie Lapointe</h3>
+						<p class="social-row">
+							<a href="https://facebook.com/annie.lapointe.961" target="_blank"><i class="icon icon-facebook hx-inline"></i></a>&ensp;
+							<a href="https://www.instagram.com/annielapointephoto" target="_blank"><i class="icon icon-instagram hx-inline"></i></a>&emsp;|&ensp;
+							<!-- <a href="https://annielapointe.com/" class="nodeco" target="_blank">annielapointe.com</a><span> -->
+							<span style="font-weight:500">annielapointe.com</span></span>
+							<!-- &emsp;|&emsp;<a class="nodeco" href="mailto:alapointe7@hotmail.com">alapointe7@hotmail.com</a> -->
+							<!-- <span> • </span><a class="nodeco" href="mailto:name@email.com">name@email.com</a> -->
+						</p>
+
+						<p>Born in 1980, Annie Lapointe is an emerging self-taught photographer from Arvida in Saguenay, living in Montreal since 2004. She studied and works in the field of&nbsp;engineering.</p>
+
+						<p>She has developed a passion for photography and seeks to capture the present moment through a shot, a presentation bringing out a particular, even unusual, angle to an environment, a&nbsp;setting.</p>
+						<p>Depending on where her travels take her, she rediscovers common places by giving them a personal&nbsp;touch.</p>
+
+						<details class="half-top-margin half-bottom-margin">
+							<summary class="semi-bold" style="font-size:larger; margin-left:-1em;">Artist Statement</summary>
+							<br />Annie seeks to capture familiar places in a different way, allowing her to emphasize or focus on an element of a setting or a certain environment from an angle that she considers interesting.
+							<br /><br />Detail of a decor, of a room, spontaneous capture of a scene from life, she seeks the aesthetics of an object or a moment captured from everyday&nbsp;life.
+							<br /><br />
+							It is especially during her travels that she lets herself be carried away by the atmosphere of the moment to immortalize points of interest of a place where she is spending a pleasant&nbsp;time.
+							<br />
+						</details>
+						<!-- <h4 style="text-transform:initial">Démarche artistique</h4>
+
+						<p>Annie cherche à capter les lieux familiers d’une manière différente permettant de mettre l’accent ou le focus sur un élément d’un décor ou d’un certain environnement sous un angle qu’elle considère intéressant. Détail d’un décor, d’une pièce, saisie spontanée d’une scène de la vie, elle recherche l’esthétique d’un objet ou d’un moment capté de la vie de tous les jours.</p>
+						<p>C’est surtout lors de ses voyages qu’elle se laisse porter par l’ambiance du moment pour immortaliser des points d’intérêt d’un lieu où elle passe un moment agréable.</p> -->
+
+						<h3>Exhibitions</h3>
+						<p>2024 - <a href="./expositions.html">Upcoming Exhibition (February)</a></p>
+						<!-- <p>
+												<button class="button button-white float-right" onclick="window.open('./jean-leduc.html');">Voir ses œuvres</button>
+											</p> -->
+					</article>
+					<!-- &nbsp; -->
+					&nbsp;
+					&nbsp;
+					<hr>
+					&nbsp;
 					&nbsp;
 
 					<article id="Jean-Leduc">

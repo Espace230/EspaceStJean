@@ -135,43 +135,33 @@
 		</script> -->
 
 	<style>
-		/* Font Inter Variable */
+		/* Variable fonts usage: */
+		:root {
+			font-family: "InterVariable", "Inter", sans-serif;
+		}
+
+		@supports (font-variation-settings: normal) {
+			:root {
+				font-family: "InterVariable", sans-serif;
+				font-optical-sizing: auto;
+			}
+		}
+
 		@font-face {
-			font-family: 'Inter';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: InterVariable;
 			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
+			font-weight: 100 900;
+			font-display: swap;
+			src: url("../fonts/InterVariable.woff2") format("woff2");
 		}
 
 		@font-face {
-			font-family: 'Inter';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: InterVariable;
 			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
-		}
-
-		/* Font Inter Tight Variable */
-		/* @font-face {
-			font-family: 'Inter Tight';
 			font-weight: 100 900;
 			font-display: swap;
-			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/InterTight-VariableFont_wght.woff2") format("woff2");
+			src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
 		}
-
-		@font-face {
-			font-family: 'Inter Tight';
-			font-weight: 100 900;
-			font-display: swap;
-			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/InterTight-Italic-VariableFont_wght.woff2") format("woff2");
-		} */
 
 	</style>
 	<link rel="stylesheet" href="../css/style.css">
@@ -319,6 +309,11 @@
 						<figure class="gallery-item">
 							<a href="#Cristalline">
 								<img src="../artworks/Louis-Bernard-St-Jean--Cristalline-2022-huile-sur-bois-48x48po.jpg" class="gallery-img" alt="">
+							</a>
+						</figure>
+						<figure class="gallery-item">
+							<a href="#InspirationsLaurentiennes">
+								<img src="../artworks/Louis-Bernard-St-Jean--Inspirations-Laurentiennes--Huile-sur-papier-Arches-16x20po.jpg" class="gallery-img" alt="">
 							</a>
 						</figure>
 						<figure class="gallery-item">
@@ -575,7 +570,7 @@
 					<h3 class="artwork artist">Louis-Bernard St-Jean</h3>
 					<p class="artwork title">La flâneuse sous la pinède</p>
 					<p class="artwork description">Oil on wood panel, 12 x 6 in.</p>
-					<p class="artwork price">$425</p>
+					<p class="artwork price">$450</p>
 					<a href="https://checkout.square.site/merchant/MLKVBC9R2A34R/checkout/45G5DXKYSULNSEIYPFDICWZO" class="button button-white button-buy btn-hover-buy">Acquire</a>
 				</div>
 			</section>
@@ -759,7 +754,6 @@
 				</div>
 			</section>
 		</div>
-
 		<div class="lightbox" onclick="location.href='#artworks'" id="Sauvagines">
 			<section style="background-image: url('../artworks/Louis-Bernard-St-Jean--Sauvagines--2021-huile-sur-panneau-de-bois-30x40po.jpg')">
 				<div class="modal-text">
@@ -770,7 +764,6 @@
 				</div>
 			</section>
 		</div>
-
 		<div class="lightbox" onclick="location.href='#artworks'" id="Quandsonneleglas">
 			<section style="background-image: url('../artworks/Louis-Bernard-St-Jean--Quand-sonne-le-glas--2021-Huile-sur-bois-36x48po.jpg')">
 				<div class="modal-text">
@@ -781,7 +774,6 @@
 				</div>
 			</section>
 		</div>
-
 		<div class="lightbox" onclick="location.href='#artworks'" id="MonochromeIII">
 			<section style="background-image: url('../artworks/Louis-Bernard-St-Jean--Monochrome-III--2021-huile-sur-panneau-de-bois-12x16po.jpg')">
 				<div class="modal-text">
@@ -792,7 +784,16 @@
 				</div>
 			</section>
 		</div>
-
+		<div class="lightbox" onclick="location.href='#artworks'" id="InspirationsLaurentiennes">
+			<section style="background-image: url('../artworks/Louis-Bernard-St-Jean--Inspirations-Laurentiennes--Huile-sur-papier-Arches-16x20po.jpg')">
+				<div class="modal-text">
+					<h3 class="artwork title">Inspirations Laurentiennes</h3>
+					<p class="artwork description">Walnut oil on Arches® paper, 16 x 20 in. Framed.</p>
+					<p class="artwork price">$1,400</p>
+					<a href="https://square.link/u/8xke9dxx" class="button button-white button-buy btn-hover-buy">Acquire</a>
+				</div>
+			</section>
+		</div>
 		<!-- <div class="lightbox" onclick="location.href='#artworks'" id="MonochromeI">
 				<section style="background-image: url('../artworks/Louis-Bernard-St-Jean--Monochrome-I--2021-huile-sur-panneau-de-bois-12x16po.jpg')">
 					<div class="modal-text">
