@@ -135,43 +135,33 @@
 		</script> -->
 
 	<style>
-		/* Font Inter Variable */
+		/* Variable fonts usage: */
+		:root {
+			font-family: "InterVariable", "Inter", sans-serif;
+		}
+
+		@supports (font-variation-settings: normal) {
+			:root {
+				font-family: "InterVariable", sans-serif;
+				font-optical-sizing: auto;
+			}
+		}
+
 		@font-face {
-			font-family: 'Inter';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: InterVariable;
 			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
+			font-weight: 100 900;
+			font-display: swap;
+			src: url("../fonts/InterVariable.woff2") format("woff2");
 		}
 
 		@font-face {
-			font-family: 'Inter';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: InterVariable;
 			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
-		}
-
-		/* Font Inter Tight Variable */
-		/* @font-face {
-			font-family: 'Inter Tight';
 			font-weight: 100 900;
 			font-display: swap;
-			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/InterTight-VariableFont_wght.woff2") format("woff2");
+			src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
 		}
-
-		@font-face {
-			font-family: 'Inter Tight';
-			font-weight: 100 900;
-			font-display: swap;
-			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/InterTight-Italic-VariableFont_wght.woff2") format("woff2");
-		} */
 
 	</style>
 	<link rel="stylesheet" href="../css/style.css">
@@ -263,6 +253,54 @@
 					<hr>
 					&nbsp;
 
+					<article id="Annie-Lapointe">
+						<br>
+						<!-- &nbsp; -->
+						<p>
+							<img class="img-frame" src="../images/Annie-Lapointe-Photo-profil.jpg" alt="Portrait de la photographe Annie Lapointe">
+						</p>
+						<h3 class="half-bottom-margin">Annie Lapointe</h3>
+						<p class="social-row">
+							<a href="https://facebook.com/annie.lapointe.961" target="_blank"><i class="icon icon-facebook hx-inline"></i></a>&ensp;
+							<a href="https://www.instagram.com/annielapointephoto" target="_blank"><i class="icon icon-instagram hx-inline"></i></a>&emsp;|&ensp;
+							<!-- <a href="https://annielapointe.com/" class="nodeco" target="_blank">annielapointe.com</a><span> -->
+							<span style="font-weight:500">annielapointe.com</span></span>
+							<!-- &emsp;|&emsp;<a class="nodeco" href="mailto:alapointe7@hotmail.com">alapointe7@hotmail.com</a> -->
+							<!-- <span> • </span><a class="nodeco" href="mailto:name@email.com">name@email.com</a> -->
+						</p>
+
+						<p>Annie Lapointe est née en 1980 est une photographe autodidacte émergente originaire d’Arvida au Saguenay, habitant Montréal depuis 2004. Elle a étudié et travaille dans le domaine de&nbsp;l’ingénierie.</p>
+
+						<p>Elle a développé une passion pour la photographie et cherche à capter le moment présent selon une prise de vue, une présentation faisant ressortir un angle particulier, voire inusité à un environnement, un&nbsp;décor.</p>
+						<p>Selon l’endroit où l’emmène ses voyages, elle redécouvre des lieux communs en leur donnant une touche&nbsp;personnelle.</p>
+
+						<details class="half-top-margin half-bottom-margin">
+							<summary class="semi-bold" style="font-size:larger; margin-left:-1em;">Démarche artistique</summary>
+							<br />Annie cherche à capter les lieux familiers d’une manière différente permettant de mettre l’accent ou le focus sur un élément d’un décor ou d’un certain environnement sous un angle qu’elle considère intéressant. Détail d’un décor, d’une pièce, saisie spontanée d’une scène de la vie, elle recherche l’esthétique d’un objet ou d’un moment capté de la vie de tous les&nbsp;jours.
+							<br /><br />
+							C’est surtout lors de ses voyages qu’elle se laisse porter par l’ambiance du moment pour immortaliser des points d’intérêt d’un lieu où elle passe un moment&nbsp;agréable.
+							<br />
+						</details>
+
+
+						<!-- <h4 style="text-transform:initial">Démarche artistique</h4>
+
+						<p>Annie cherche à capter les lieux familiers d’une manière différente permettant de mettre l’accent ou le focus sur un élément d’un décor ou d’un certain environnement sous un angle qu’elle considère intéressant. Détail d’un décor, d’une pièce, saisie spontanée d’une scène de la vie, elle recherche l’esthétique d’un objet ou d’un moment capté de la vie de tous les jours.</p>
+						<p>C’est surtout lors de ses voyages qu’elle se laisse porter par l’ambiance du moment pour immortaliser des points d’intérêt d’un lieu où elle passe un moment agréable.</p> -->
+
+						<h3>Expositions</h3>
+						<p>2024 - <a href="./expositions.html">Exposition à venir (février)</a></p>
+						<!-- <p>
+												<button class="button button-white float-right" onclick="window.open('./jean-leduc.html');">Voir ses œuvres</button>
+											</p> -->
+					</article>
+					<!-- &nbsp; -->
+					&nbsp;
+					&nbsp;
+					<hr>
+					&nbsp;
+					&nbsp;
+
 					<article id="Jean-Leduc">
 						<br>
 						<!-- &nbsp; -->
@@ -286,17 +324,18 @@
 						</p> -->
 					</article>
 					<!-- &nbsp; -->
+
 					<!-- <p>
-										<img class="img-frame" src="./images/Jihane-Mossalim-Portrait.jpg" alt="L'artiste peintre Jihane Mossalim.jpg">
-									</p>
-									<h3 class="half-bottom-margin">Jihane Mossalim</h3>
-									<p class="social-row">
-										<a href="https://www.facebook.com/jmossalim" target="_blank"><i class="icon icon-facebook hx-inline"></i></a>&emsp;|&emsp;<a class="nodeco" href="https://jimoss.com/" target="_blank">jimoss.com</a><span> • </span><a class="nodeco" href="mailto:jimoss@hotmail.com">jimoss@hotmail.com</a>
-									</p>
-									<p>Née et élevée à Montréal, Jihane Mossalim est une artiste accomplie avec un baccalauréat en beaux-arts avec spécialisation en éducation artistique et une maîtrise en éducation artistique de l'Université Concordia.</p>
-									<p>Elle commencera son doctorat en éducation artistique à l'automne 2023. Elle a exposé ses œuvres à travers l'Amérique du Nord et l'Europe depuis 2009, et a reçu le Prix de la famille Glencross en Éducation artistique de l'Université Concordia en 2018.</p>
-				
-									<p>Jihane Mossalim est une représentante des étudiants diplômés de la Société canadienne d’éducation par l’art (CSEA/SCEA); elle était également jusqu’à tout récemment Directrice des beaux-arts de l'Initiative Convergence, un organisme à but non lucratif qui contribue à promouvoir les neurosciences, les arts et la collaboration entre ces deux domaines.</p> -->
+						<img class="img-frame" src="./images/Jihane-Mossalim-Portrait.jpg" alt="L'artiste peintre Jihane Mossalim.jpg">
+					</p>
+					<h3 class="half-bottom-margin">Jihane Mossalim</h3>
+					<p class="social-row">
+						<a href="https://www.facebook.com/jmossalim" target="_blank"><i class="icon icon-facebook hx-inline"></i></a>&emsp;|&emsp;<a class="nodeco" href="https://jimoss.com/" target="_blank">jimoss.com</a><span> • </span><a class="nodeco" href="mailto:jimoss@hotmail.com">jimoss@hotmail.com</a>
+					</p>
+					<p>Née et élevée à Montréal, Jihane Mossalim est une artiste accomplie avec un baccalauréat en beaux-arts avec spécialisation en éducation artistique et une maîtrise en éducation artistique de l'Université Concordia.</p>
+					<p>Elle commencera son doctorat en éducation artistique à l'automne 2023. Elle a exposé ses œuvres à travers l'Amérique du Nord et l'Europe depuis 2009, et a reçu le Prix de la famille Glencross en Éducation artistique de l'Université Concordia en 2018.</p>
+
+					<p>Jihane Mossalim est une représentante des étudiants diplômés de la Société canadienne d’éducation par l’art (CSEA/SCEA); elle était également jusqu’à tout récemment Directrice des beaux-arts de l'Initiative Convergence, un organisme à but non lucratif qui contribue à promouvoir les neurosciences, les arts et la collaboration entre ces deux domaines.</p> -->
 
 					<!-- <p>
 										<button class="button button-white float-right" onclick="window.open('./jihane-mossalim.html');">Voir ses œuvres</button>

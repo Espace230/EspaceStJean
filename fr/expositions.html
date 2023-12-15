@@ -135,43 +135,33 @@
 		</script> -->
 
 	<style>
-		/* Font Inter Variable */
+		/* Variable fonts usage: */
+		:root {
+			font-family: "InterVariable", "Inter", sans-serif;
+		}
+
+		@supports (font-variation-settings: normal) {
+			:root {
+				font-family: "InterVariable", sans-serif;
+				font-optical-sizing: auto;
+			}
+		}
+
 		@font-face {
-			font-family: 'Inter';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: InterVariable;
 			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
+			font-weight: 100 900;
+			font-display: swap;
+			src: url("../fonts/InterVariable.woff2") format("woff2");
 		}
 
 		@font-face {
-			font-family: 'Inter';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: InterVariable;
 			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
-		}
-
-		/* Font Inter Tight Variable */
-		/* @font-face {
-			font-family: 'Inter Tight';
 			font-weight: 100 900;
 			font-display: swap;
-			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/InterTight-VariableFont_wght.woff2") format("woff2");
+			src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
 		}
-
-		@font-face {
-			font-family: 'Inter Tight';
-			font-weight: 100 900;
-			font-display: swap;
-			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/InterTight-Italic-VariableFont_wght.woff2") format("woff2");
-		} */
 
 	</style>
 	<link rel="stylesheet" href="../css/style.css">

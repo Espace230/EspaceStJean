@@ -135,42 +135,176 @@
 		</script> -->
 
 	<style>
-		/* Font Inter Variable */
+		/* Variable fonts usage: */
+		:root {
+			font-family: "InterVariable", "Inter", sans-serif;
+		}
+
+		@supports (font-variation-settings: normal) {
+			:root {
+				font-family: "InterVariable", sans-serif;
+				font-optical-sizing: auto;
+			}
+		}
+
 		@font-face {
-			font-family: 'Inter';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: InterVariable;
 			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
+			font-weight: 100 900;
+			font-display: swap;
+			src: url("../fonts/InterVariable.woff2") format("woff2");
 		}
 
 		@font-face {
-			font-family: 'Inter';
+			font-family: InterVariable;
+			font-style: italic;
 			font-weight: 100 900;
 			font-display: swap;
-			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
+			src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
 		}
 
-		/* Font Inter Tight Variable */
 		/* @font-face {
-			font-family: 'Inter Tight';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: "InterDisplay";
 			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/InterTight-VariableFont_wght.woff2") format("woff2");
+			font-weight: 100;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-Thin.woff2") format("woff2");
 		}
 
 		@font-face {
-			font-family: 'Inter Tight';
-			font-weight: 100 900;
-			font-display: swap;
+			font-family: "InterDisplay";
 			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/InterTight-Italic-VariableFont_wght.woff2") format("woff2");
+			font-weight: 100;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-ThinItalic.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: normal;
+			font-weight: 200;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-ExtraLight.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: italic;
+			font-weight: 200;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-ExtraLightItalic.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-Light.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: italic;
+			font-weight: 300;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-LightItalic.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-Regular.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: italic;
+			font-weight: 400;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-Italic.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: normal;
+			font-weight: 500;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-Medium.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: italic;
+			font-weight: 500;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-MediumItalic.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: normal;
+			font-weight: 600;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-SemiBold.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: italic;
+			font-weight: 600;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-SemiBoldItalic.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: normal;
+			font-weight: 700;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-Bold.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: italic;
+			font-weight: 700;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-BoldItalic.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: normal;
+			font-weight: 800;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-ExtraBold.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: italic;
+			font-weight: 800;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-ExtraBoldItalic.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: normal;
+			font-weight: 900;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-Black.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: "InterDisplay";
+			font-style: italic;
+			font-weight: 900;
+			font-display: swap;
+			src: url("../fonts/InterDisplay-BlackItalic.woff2") format("woff2");
 		} */
 
 	</style>
@@ -239,6 +373,9 @@
 
 					<p>Anciennement connu sous le nom de l'<a href="https://espace230.com">Espace 230</a> avant de déménager au local 521 du Belgo, l'atelier-galerie avait originellement été conçu afin de présenter et de promouvoir les ateliers et ses occupants.</p>
 					<p>Ouvert depuis septembre 2023, l'Espace St-Jean alternera désormais entre expositions collectives, expositions individuelles et autres évémements artistiques.</p>
+					<p>
+						<img src="../images/Espace-St-Jean-floor-plan.png" alt="Plan de la galerie">
+					</p>
 					<p>De nombreux projets sont à l'horizon — des appels de dossiers seront lancés au printemps 2024&thinsp;!</p>
 					<!-- <p>De nombreux projets sont à l'horizon, incluant de futures expositions collectives d’artistes locaux; des appels de dossiers seront lancés au printemps 2024.</p> -->
 

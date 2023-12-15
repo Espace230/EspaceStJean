@@ -135,8 +135,36 @@
 		</script> -->
 
 	<style>
-		/* Font Inter Variable */
+		/* Variable fonts usage: */
+		:root {
+			font-family: "InterVariable", "Inter", sans-serif;
+		}
+
+		@supports (font-variation-settings: normal) {
+			:root {
+				font-family: "InterVariable", sans-serif;
+				font-optical-sizing: auto;
+			}
+		}
+
 		@font-face {
+			font-family: InterVariable;
+			font-style: normal;
+			font-weight: 100 900;
+			font-display: swap;
+			src: url("../fonts/InterVariable.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: InterVariable;
+			font-style: italic;
+			font-weight: 100 900;
+			font-display: swap;
+			src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
+		}
+
+		/* Font Inter Variable OLD 3.19 VERSION */
+		/* @font-face {
 			font-family: 'Inter';
 			font-weight: 100 900;
 			font-display: swap;
@@ -152,25 +180,6 @@
 			font-style: italic;
 			font-named-instance: 'Italic';
 			src: url("../fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
-		}
-
-		/* Font Inter Tight Variable */
-		/* @font-face {
-			font-family: 'Inter Tight';
-			font-weight: 100 900;
-			font-display: swap;
-			font-style: normal;
-			font-named-instance: 'Regular';
-			src: url("../fonts/InterTight-VariableFont_wght.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: 'Inter Tight';
-			font-weight: 100 900;
-			font-display: swap;
-			font-style: italic;
-			font-named-instance: 'Italic';
-			src: url("../fonts/InterTight-Italic-VariableFont_wght.woff2") format("woff2");
 		} */
 
 	</style>
@@ -314,6 +323,11 @@
 						<figure class="gallery-item">
 							<a href="#Cristalline">
 								<img src="../artworks/Louis-Bernard-St-Jean--Cristalline-2022-huile-sur-bois-48x48po.jpg" class="gallery-img" alt="">
+							</a>
+						</figure>
+						<figure class="gallery-item">
+							<a href="#InspirationsLaurentiennes">
+								<img src="../artworks/Louis-Bernard-St-Jean--Inspirations-Laurentiennes--Huile-sur-papier-Arches-16x20po.jpg" class="gallery-img" alt="">
 							</a>
 						</figure>
 						<figure class="gallery-item">
@@ -565,7 +579,7 @@
 					<h3 class="artwork artist">Louis-Bernard St-Jean</h3>
 					<p class="artwork title">La flâneuse sous la pinède</p>
 					<p class="artwork description">Huile sur panneau de bois, 12 x 6 po.</p>
-					<p class="artwork price">425 $</p>
+					<p class="artwork price">450 $</p>
 					<a href="https://checkout.square.site/merchant/MLKVBC9R2A34R/checkout/45G5DXKYSULNSEIYPFDICWZO" class="button button-white button-buy btn-hover-buy">Acheter</a>
 				</div>
 			</section>
@@ -753,6 +767,16 @@
 					<p class="artwork description">Huile sur panneau de bois, 12 x 16 po.</p>
 					<p class="artwork price">500 $</p>
 					<a href="https://square.link/u/oJQnZSOw" class="button button-white button-buy btn-hover-buy">Acheter</a>
+				</div>
+			</section>
+		</div>
+		<div class="lightbox" onclick="location.href='#oeuvres'" id="InspirationsLaurentiennes">
+			<section style="background-image: url('../artworks/Louis-Bernard-St-Jean--Inspirations-Laurentiennes--Huile-sur-papier-Arches-16x20po.jpg')">
+				<div class="modal-text">
+					<h3 class="artwork title">Inspirations Laurentiennes</h3>
+					<p class="artwork description">Huile de noix de Grenoble sur papier Arches®, 16 x 20 po. Encadré.</p>
+					<p class="artwork price">1 400 $</p>
+					<a href="https://square.link/u/8xke9dxx" class="button button-white button-buy btn-hover-buy">Acheter</a>
 				</div>
 			</section>
 		</div>
