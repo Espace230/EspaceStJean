@@ -77,7 +77,9 @@ li.main-nav.active .section-title {
 }
 
 li.main-nav.active .section-content {
-	flex: 8;
+	/* Changed flex to 9 to accomodate actual viewport height !2024-02-07 */
+	flex: 9;
+	/* flex: 8; */
 	transform: scaleX(1);
 }
 
@@ -336,6 +338,37 @@ li.active #gallery-button-show {
 	position: fixed;
 	right: 1vw;
 	z-index: 1999999;
+}
+
+/* ////////////////// */
+/* NUIT BLANCHE LOGOS */
+/* ////////////////// */
+
+.NB-flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.NB-flex-items:nth-child(1) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+}
+
+.NB-flex-items:nth-child(2) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
 }
 
 
