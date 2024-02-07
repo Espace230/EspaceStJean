@@ -536,7 +536,9 @@ li.active #gallery-button-show {
 
 	li.main-nav.active {
 		order: 5;
-		flex: 20;
+		/* Changed to 19 to accomodate Real Viewport Size !2024-02-07 */
+		flex: 19;
+		/* flex: 20; */
 		/* Shrink size of menu at the top */
 	}
 
