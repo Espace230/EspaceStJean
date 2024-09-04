@@ -83,6 +83,16 @@
 			background-size: auto 70% !important;
 		}
 
+		@media screen and (orientation: portrait) {
+			div.lightbox>section {
+				background-size: auto 45% !important;
+			}
+
+			div.lightbox>section.redux {
+				background-size: auto 30% !important;
+			}
+		}
+
 	</style>
 
 </head>
@@ -352,7 +362,7 @@
 			</section>
 		</div>
 		<div class="lightbox" onclick="location.href='#gallery'" id="terrific-traffic">
-			<section style="background-image: url('../../artworks/Denise-Buisman-Pilger--terrific-traffic-18002mm.jpg')">
+			<section class="redux" style="background-image: url('../../artworks/Denise-Buisman-Pilger--terrific-traffic-18002mm.jpg')">
 				<div class="modal-text">
 					<h3 class="artwork artist">Denise Buisman Pilger</h3>
 					<p class="artwork title">Terrific traffic</p>
@@ -361,7 +371,7 @@
 			</section>
 		</div>
 		<div class="lightbox" onclick="location.href='#gallery'" id="careful-coexistence">
-			<section style="background-image: url('../../artworks/Denise-Buisman-Pilger--careful-coexistence-22006mm.jpg')">
+			<section class="redux" style="background-image: url('../../artworks/Denise-Buisman-Pilger--careful-coexistence-22006mm.jpg')">
 				<div class="modal-text">
 					<h3 class="artwork artist">Denise Buisman Pilger</h3>
 					<p class="artwork title">Careful Coexistence</p>
