@@ -296,10 +296,33 @@
 							<em style="color:#484848"><a class="nodeco" style="font-weight:inherit" href="mailto:info@espacestjean.com">(Open on request)</a></em>
 						</div>
 					</div>
-					<br /><br />
-					<!--
+
+					<br />
+					<!-- 
 					<p><strong>Please note:</strong> the gallery will be closed from August 24 to August 31, 2024.</p>
-					<br /> -->
+					-->
+					<br />
+
+					<h3 id="newsletter" class="half-top-margin quart-bottom-margin">Newsletter</h3>
+					<hr>
+					<br />
+					<p class="semi-bold">Subscribe to the newsletter!<br />
+						<span style="font-size:0.7rem;font-weight:300;color:#484848;"><em>*Your info is kept secure, and will never be shared or sold.</em></span>
+					</p>
+					<form id="newsletterForm">
+						<label for="name">Name:</label><br />
+						<input type="text" id="name" name="name" placeholder="First Lastname" required /><br /><br />
+
+						<label for="email">Email:</label><br />
+						<input type="email" id="email" name="email" placeholder="email@domain.com" required /><br /><br />
+
+						<!-- <label for="message">Message:</label><br />
+												<textarea id="message" name="message" rows="4" cols="50" required></textarea><br /><br /> -->
+						<button class="button button-white" type="submit">SUBSCRIBE</button>
+						<br />
+						<br />
+						<p id="confirmation"> Your subscription to the newsletter is confirmed! Thank you!</p>
+					</form>
 
 					<!-- ||||||||||||||||||||||||||||||||||||||| -->
 					<!-- <p></p> -->
@@ -358,3 +381,35 @@
 </body>
 
 </html>
+
+<script>
+	const url =
+		'https://script.google.com/macros/s/AKfycbxz_CFaoKb6PTN2txQN4leShpBy3WYLXqr4x2teg30uY4q9f8X_sYzdOOHgXAHkL9Qs/exec';
+
+	document
+		.getElementById('newsletterForm')
+		.addEventListener('submit', function (event) {
+			event.preventDefault();
+
+			const formData = new FormData(this);
+			const data = Object.fromEntries(formData);
+			const thanks = document.querySelector('#confirmation');
+
+			fetch(url, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'text/plain;charset=utf-8',
+				},
+				body: JSON.stringify(data),
+			})
+				.then((res) => res.json())
+				.then((data) => {
+					console.log('Successful', data);
+					thanks.classList.add('show');
+					this.reset();
+				})
+				.catch((err) => console.log('err', err));
+
+		});
+
+</script>
