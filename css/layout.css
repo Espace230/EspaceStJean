@@ -573,7 +573,6 @@ li.active #gallery-button-show {
 		/* 5.5vh; */
 	}
 
-
 	li.main-nav .section-title a svg,
 	li.main-nav .section-title a img {
 		transform-origin: top left;
@@ -581,6 +580,10 @@ li.active #gallery-button-show {
 		width: 100vw;
 		max-width: 7.5%;
 		/* 10% */
+	}
+
+	.button-white {
+		border: 1.5px solid #141516;
 	}
 
 	/* li.main-nav .section-title a img {visibility:hidden;} */
@@ -606,6 +609,7 @@ li.active #gallery-button-show {
 		max-height: 4.25vh;
 		/* margin-top: -0.5vh; */
 	}
+
 
 }
 
