@@ -511,12 +511,14 @@ sub {
 input {
 	border: 1px solid #141516;
 	height: 2em;
-	width: 100%;
-	/* font-family: 'Inter'; */
+	border-radius: 0;
+	padding-left: 0.5em;
+	width: 99%;
+	max-width: 560px;
 	font-weight: 400;
 	color: #141516;
 	letter-spacing: 0.01rem;
-	font-size: 0.7777777778rem;
+	font-size: 0.722rem;
 	line-height: 1;
 	white-space: nowrap;
 	text-decoration: none;
@@ -524,6 +526,11 @@ input {
 
 input::placeholder {
 	color: #aaa;
+}
+
+form > label {
+	font-weight: 500;
+	font-size: 0.7777777778rem;
 }
 
 #confirmation {
