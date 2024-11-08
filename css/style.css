@@ -510,7 +510,7 @@ sub {
 /* Newsletter form */
 input {
 	border: 1px solid #141516;
-	height: 2em;
+	height: 2rem;
 	border-radius: 0;
 	padding-left: 0.5em;
 	width: 100%;
