@@ -513,13 +513,13 @@ input {
 	height: 2em;
 	border-radius: 0;
 	padding-left: 0.5em;
-	width: 99%;
-	max-width: 550px;
+	width: 100%;
+	box-sizing: border-box;
 	font-weight: 400;
 	color: #141516;
 	letter-spacing: 0.01rem;
 	font-size: 0.722rem;
-	line-height: 1;
+	line-height: 1.6111111rem;
 	white-space: nowrap;
 	text-decoration: none;
 }
