@@ -46,7 +46,7 @@ h1,
 	margin-top: 3.2222222rem;
 	margin-bottom: 1.6111111rem;
 	/* letter-spacing: -0.06rem; */
-	letter-spacing: -0.18rem;
+	letter-spacing: -0.12rem;
 
 }
 
@@ -56,7 +56,7 @@ h2,
 	line-height: 3.2222222rem;
 	margin-top: 1.6111111rem;
 	margin-bottom: 1.6111111rem;
-	letter-spacing: -0.05rem;
+	letter-spacing: -0.04rem;
 }
 
 h3,
@@ -132,13 +132,17 @@ summary :not(.gallery-summary) {
 	margin-left: -1em !important;
 }
 
-details {
+summary details {
 	padding-bottom: 0.6111111em;
+	/* font-size: 1rem;
+	font-weight: 800;
+	margin-left: -1em; */
 }
 
 details p:last-of-type {
 	margin-bottom: 0
 }
+
 
 ul ul,
 ol ol,
@@ -503,6 +507,34 @@ sub {
 	max-width: 132px;
 }
 
+/* Newsletter form */
+input {
+	border: 1px solid #141516;
+	height: 2em;
+	width: 100%;
+	/* font-family: 'Inter'; */
+	font-weight: 400;
+	color: #141516;
+	letter-spacing: 0.01rem;
+	font-size: 0.7777777778rem;
+	line-height: 1;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+input::placeholder {
+	color: #aaa;
+}
+
+#confirmation {
+	visibility: hidden;
+}
+
+#confirmation.show {
+	visibility: visible;
+}
+
+/* Nuit blanche */
 .LogoNB {
 	max-width: 150px !important;
 	padding: 0 30px;
