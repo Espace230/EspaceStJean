@@ -582,7 +582,8 @@ li.active #gallery-button-show {
 		/* 10% */
 	}
 
-	.button-white {
+	.button-white,
+	.button-white:hover {
 		border: 1.5px solid #141516;
 	}
 
